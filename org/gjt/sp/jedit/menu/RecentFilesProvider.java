@@ -110,7 +110,7 @@ public class RecentFilesProvider implements DynamicMenuProvider
 				{
 					for (JMenuItem recent : menuItems)
 					{
-						recent.setEnabled(!filter || pattern.matcher(recent.getText()).matches());
+						recent.setEnabled(!filter || recent.getText().indexOf(pattern.pattern())!= -1);
 					}
 				}
 				catch(PatternSyntaxException re)
