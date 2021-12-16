@@ -5281,6 +5281,8 @@ loop:		for(int i = lineNo - 1; i >= 0; i--)
 
 	protected int caret;
 	protected int caretLine;
+	protected int totalWords;
+	protected int wordPosition;
 	private int caretScreenLine;
 
 	private final java.util.List<StructureMatcher> structureMatchers;

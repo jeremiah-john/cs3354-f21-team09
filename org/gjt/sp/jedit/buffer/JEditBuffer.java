@@ -316,7 +316,10 @@ public class JEditBuffer
 		// no need to lock since this just returns a value and that's it
 		return contentMgr.getLength();
 	} //}}}
-
+    public int getWordCount()
+	{
+		return contentMgr.getWordCount();
+	}
 	//{{{ getLineCount() method
 	/**
 	 * @return the number of physical lines in the buffer.
