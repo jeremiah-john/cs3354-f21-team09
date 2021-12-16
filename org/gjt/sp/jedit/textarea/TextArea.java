@@ -2297,6 +2297,16 @@ forward_scan:	do
 		}
 	} //}}}
 
+	//{{{ getWordPosition() method
+	/***
+	 * Returns a zero-based index of which word the caret is positioned on
+	 */
+	public int getWordPosition() {return wordPosition} //}}}
+	//{{{ getTotalWords() method
+	/***
+	 * Returns how many words are in the file
+	 */
+	public int getTotalWords() {return totalWords} //}}}
 	//{{{ getCaretPosition() method
 	/**
 	 * Returns a zero-based index of the caret position.
